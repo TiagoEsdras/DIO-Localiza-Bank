@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esdra\\Desktop\\DIO\\Desafio-Bank\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\esdra\\Desktop\\DIO\\Desafio-Bank\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\esdra\\Desktop\\DIO\\Desafio-Bank\\ConsoleApp1\\ConsoleBank.csproj",
+      "projectName": "ConsoleBank",
+      "projectPath": "C:\\Users\\esdra\\Desktop\\DIO\\Desafio-Bank\\ConsoleApp1\\ConsoleBank.csproj",
       "packagesPath": "C:\\Users\\esdra\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\esdra\\Desktop\\DIO\\Desafio-Bank\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",

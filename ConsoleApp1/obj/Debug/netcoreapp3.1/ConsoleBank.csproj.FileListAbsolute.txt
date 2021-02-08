@@ -1,0 +1,12 @@
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleBank.exe
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleBank.deps.json
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleBank.runtimeconfig.json
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleBank.runtimeconfig.dev.json
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleBank.dll
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleBank.pdb
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.AssemblyInfoInputs.cache
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.AssemblyInfo.cs
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.csproj.CoreCompileInputs.cache
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.dll
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.pdb
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.genruntimeconfig.cache
