@@ -26,8 +26,7 @@ namespace ConsoleBank
                         break;
                 }
                 opcaoUsuario = ObterOpcaoUsuario();
-            }
-
+            }                        
         }
         private static string ObterOpcaoUsuario()
         {
@@ -47,6 +46,6 @@ namespace ConsoleBank
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
             return opcaoUsuario;
-        }  
+        }
     }
 }

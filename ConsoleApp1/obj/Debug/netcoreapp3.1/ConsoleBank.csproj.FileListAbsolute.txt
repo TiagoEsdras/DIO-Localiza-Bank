@@ -10,3 +10,4 @@ C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\Cons
 C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.dll
 C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.pdb
 C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.genruntimeconfig.cache
+C:\Users\esdra\Desktop\DIO\Desafio-Bank\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleBank.csprojAssemblyReference.cache
