@@ -41,7 +41,6 @@ namespace ConsoleBank
             if(this.Sacar(valorTranferir))
             {
                 contaDestino.Depositar(valorTranferir);
-                Console.WriteLine("O valor disponível na conta de {0} é R$ {1}", this.Nome, this.Saldo.ToString("F2"));
             } 
         }
 

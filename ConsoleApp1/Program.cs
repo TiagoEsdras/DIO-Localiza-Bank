@@ -21,12 +21,18 @@ namespace ConsoleBank
                         ListarContas();
                         break;
                     case "3":
+                        Depositar();
                         break;
                     case "4":
+                        Sacar();
+                        break;
+                    case "5":
+                        Transferir();
                         break;
                     case "X":
                         break;
                     default:
+                        Console.WriteLine("Opção inexistente");
                         break;
                 }
                 opcaoUsuario = ObterOpcaoUsuario();
@@ -35,7 +41,6 @@ namespace ConsoleBank
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
-            Console.WriteLine("-----------------------------------");
             Console.WriteLine("-------- Escolha uma opção --------");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("1 - Cadastrar ---------------------");
@@ -49,9 +54,10 @@ namespace ConsoleBank
             Console.WriteLine("5 - Transferir --------------------");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("X - Sair --------------------------");
-            Console.WriteLine("-----------------------------------");
+            Console.WriteLine();
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
+            Console.Clear();
             return opcaoUsuario;
         }
 
@@ -83,6 +89,7 @@ namespace ConsoleBank
             credito = Convert.ToDouble(Console.ReadLine());
 
             Conta novaConta = new Conta((TipoConta)tipoConta, nome, saldo, credito);
+            Console.Clear();
 
             contas.Add(novaConta);
         }
@@ -116,7 +123,7 @@ namespace ConsoleBank
             valorSaque = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine();
 
-            contas[conta].Depositar(valorSaque);
+            contas[conta].Sacar(valorSaque);
         }
 
         private static void Transferir()
@@ -132,7 +139,7 @@ namespace ConsoleBank
             contaDestino = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
 
-            Console.Write("Valor a ser depositado: R$ ");
+            Console.Write("Valor a ser transferido: R$ ");
             valorTransferencia = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine();
 
@@ -141,10 +148,16 @@ namespace ConsoleBank
 
         private static void ListarContas()
         {
-            contas.ForEach(delegate (Conta conta)
+            if (contas.Count == 0) Console.WriteLine("Nenhuma conta cadastrada");
+            else
             {
-                Console.WriteLine(conta);
-            });
+                for (int i = 0; i < contas.Count; i++)
+                {
+                    Conta conta = contas[i];
+                    Console.WriteLine("N° conta: {0} - {1}", i, conta);
+                }
+
+            }            
         }
     }
 }
