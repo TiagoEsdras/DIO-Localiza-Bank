@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleBank
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        static List<Conta> contas = new List<Conta>();
+        static void Main(string[] args)        {
+            
             string opcaoUsuario = ObterOpcaoUsuario();
 
             while(opcaoUsuario != "X")
@@ -13,6 +15,7 @@ namespace ConsoleBank
                 switch(opcaoUsuario)
                 {
                     case "1":
+                        InserirConta();
                         break;
                     case "2":
                         break;
@@ -46,6 +49,38 @@ namespace ConsoleBank
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
             return opcaoUsuario;
+        }
+
+        private static void InserirConta()
+        {
+            string nome;
+            int tipoConta;
+            double saldo, credito;
+
+            Console.WriteLine("Escolha o tipo de conta:");
+            Console.WriteLine("1 - Pessoa Fisica");
+            Console.WriteLine("2 - Pessoa Juridica");
+
+            tipoConta = Convert.ToInt32(Console.ReadLine());          
+
+            Console.WriteLine();
+
+            Console.Write("Nome: ");
+            nome = Console.ReadLine();
+
+            Console.WriteLine();
+
+            Console.Write("Saldo: R$ ");
+            saldo = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine();
+
+            Console.Write("Crédito: R$ ");
+            credito = Convert.ToDouble(Console.ReadLine());
+
+            Conta novaConta = new Conta((TipoConta)tipoConta, nome, saldo, credito);
+
+            contas.Add(novaConta);
         }
     }
 }
