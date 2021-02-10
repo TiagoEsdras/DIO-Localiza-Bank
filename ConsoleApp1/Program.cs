@@ -82,5 +82,41 @@ namespace ConsoleBank
 
             contas.Add(novaConta);
         }
+
+        private static void Depositar()
+        {
+            double valorDeposito;
+            int conta;
+
+            Console.Write("Digite o numero da conta: ");
+            conta = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.Write("Valor a ser depositado: R$ ");
+            valorDeposito = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+
+            contas[conta].Depositar(valorDeposito);
+        }
+
+        private static void Transferir()
+        {
+            double valorTransferencia;
+            int contaOrigem, contaDestino;
+
+            Console.Write("Digite o numero da conta de origem: ");
+            contaOrigem = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.Write("Digite o numero da conta de destino: ");
+            contaDestino = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.Write("Valor a ser depositado: R$ ");
+            valorTransferencia = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+
+            contas[contaOrigem].Transferir(contas[contaDestino], valorTransferencia);
+        }
     }
 }
